@@ -1035,7 +1035,7 @@ def _attach_flexmock_methods(mock, flexmock_class, obj):
   except AttributeError:
     if obj.__slots__:
       raise MockSlotsError(
-        'Cannot mock an object with \'__slots__\'.'
+        'Cannot mock an object with \'__slots__\'. '
         'Consider wrapping it in a class you can mock instead')  
     raise MockBuiltinError(
         'Python does not allow you to mock instances of builtin objects. '
